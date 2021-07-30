@@ -27,15 +27,18 @@
 
 /* Font */
 .aa-dropdown-menu {
-	color: #1a1a1a;
-	font-size: 12px;
+	font-family: Poppins; 
+	color: #0c123b;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .aa-dropdown-menu a {
 	font-size: 12px;
-	color: #1a1a1a;
+	color: #0c123b;
 	font-weight: normal;
 	text-decoration: none;
+	font-family: Poppins; 
 }
 .aa-dropdown-menu a:hover {
 	text-decoration: none;
@@ -69,7 +72,7 @@
 }
 
 .aa-dropdown-menu .autocomplete-header-more a:hover {
-	color:  rgba(0,0,0,.4);
+	color: #ffe0cc;
 }
 
 /* Suggestion */
@@ -118,7 +121,7 @@
 }
 
 .aa-dropdown-menu .aa-suggestion.aa-cursor {
-	background-color: #f9f9f9;
+	background-color: #e5ecff;
 
 }
 
@@ -128,7 +131,7 @@
 }
 
 .aa-dropdown-menu a.suggestion-link.user-suggestion-link {
-	line-height: 32px;
+	line-height: 100px;
 }
 
 
@@ -141,20 +144,22 @@
 .aa-dropdown-menu .suggestion-post-thumbnail {
 	float: left;
 	margin-right: 5px;
-	margin-bottom: 5px;
-	border-radius: 3px;
-	width: 32px;
-	height: 32px;
+	margin-bottom: 2px;
+	border-radius: 16px;
+	width: 60px;
+	height: 60px;
 }
+
 
 .aa-dropdown-menu .suggestion-user-thumbnail {
 	float: left;
 	margin-right: 5px;
 	margin-bottom: 5px;
 	border-radius: 16px;
-	width: 32px;
-	height: 32px;
+	width: 36px;
+	height: 36px;
 }
+
 
 /* Footer */
 .aa-dropdown-menu .autocomplete-footer-branding {
