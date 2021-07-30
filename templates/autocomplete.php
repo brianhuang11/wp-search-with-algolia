@@ -144,7 +144,7 @@
 				source: algoliaHitsSource( client.initIndex( config[ 'index_name' ] ), {
 					hitsPerPage: config[ 'max_suggestions' ],
 					attributesToSnippet: [
-						'content:10'
+						'content:11'
 					],
 					highlightPreTag: '__ais-highlight__',
 					highlightPostTag: '__/ais-highlight__'
