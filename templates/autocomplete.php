@@ -19,6 +19,23 @@
 </script>
 
 <script type="text/html" id="tmpl-autocomplete-post-suggestion">
+  <a class="suggestion-link" href="{{ data.permalink }}" title="{{ data.post_title }}">
+	<# if ( data.images.thumbnail ) { #>
+	  <div class="suggestion-post-thumbnail"><img src="{{ data.images.thumbnail.url }}" alt="{{ data.post_title }}"></div>
+	  <# } #>
+		<div class="suggestion-post-attributes">
+		  <div class="suggestion-post-title"><span style='color:#0c123b'>{{{ data._highlightResult.post_title.value }}}</span></div>
+		  <# if (data.price || data.sku ) { #> 
+		  <div class="suggestion-post-attributes"> ${{{ data.price}}}</span> &nbsp;&nbsp; SKU:{{{data._highlightResult.sku.value}}}</span> </div>
+		  <# } #>
+		  <# if ( data._snippetResult['content'] ) { #>
+		   <span style='color:#626567'>{{{ data._snippetResult['content'].value }}}</span>
+		   <# } #>
+		</div>
+  </a>
+</script>
+
+<script type="text/html" id="tmpl-autocomplete-post-suggestion">
 	<a class="suggestion-link" href="{{ data.permalink }}" title="{{ data.post_title }}">
 		<# if ( data.images.thumbnail ) { #>
 			<img class="suggestion-post-thumbnail" src="{{ data.images.thumbnail.url }}" alt="{{ data.post_title }}">
